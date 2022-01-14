@@ -39,7 +39,7 @@ VPATH = ..
 ###############################################################################
 # Project settings
 
-PROJECT := 4180_Lab1
+PROJECT := MBED_LPC1768
 
 
 # Project settings
