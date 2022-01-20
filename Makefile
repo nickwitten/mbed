@@ -77,7 +77,6 @@ OBJECTS += main.o
 INCLUDE_PATHS += -I../
 INCLUDE_PATHS += -I../.
 INCLUDE_PATHS += -I..//usr/src/mbed-sdk
-INCLUDE_PATHS += -I../PinDetect
 INCLUDE_PATHS += -I../mbed
 INCLUDE_PATHS += -I../mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM
 INCLUDE_PATHS += -I../mbed/drivers
