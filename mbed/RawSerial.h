@@ -32,6 +32,8 @@ namespace mbed {
  * Can be used for Full Duplex communication, or Simplex by specifying
  * one pin as NC (Not Connected)
  *
+ * @Note Synchronization level: Not protected
+ *
  * Example:
  * @code
  * // Send a char to the PC
@@ -71,6 +73,26 @@ public:
      * @returns The char read from the serial port
      */
     int getc();
+
+    /** Write a string to the serial port
+     *
+     * @param str The string to write
+     *
+     * @returns 0 if the write succeeds, EOF for error
+     */
+    int puts(const char *str);
+
+    int printf(const char *format, ...);
+
+protected:
+
+    /** Acquire exclusive access to this serial port
+     */
+    virtual void lock(void);
+
+    /** Release exclusive access to this serial port
+     */
+    virtual void unlock(void);
 };
 
 } // namespace mbed

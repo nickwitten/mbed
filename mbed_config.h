@@ -21,5 +21,17 @@
 #ifndef __MBED_CONFIG_DATA__
 #define __MBED_CONFIG_DATA__
 
+// Configuration parameters
+#define MBED_CONF_RTOS_PRESENT                          1          // set by library:rtos
+#define MBED_CONF_TARGET_BOOT_STACK_SIZE                0x1000     // set by target:Target
+#define MBED_CONF_TARGET_CONSOLE_UART                   1          // set by target:Target
+#define MBED_CONF_TARGET_DEEP_SLEEP_LATENCY             0          // set by target:Target
+#define MBED_CONF_TARGET_DEFAULT_ADC_VREF               NAN        // set by target:Target
+#define MBED_CONF_TARGET_INIT_US_TICKER_AT_BOOT         0          // set by target:Target
+#define MBED_CONF_TARGET_MPU_ROM_END                    0x0fffffff // set by target:Target
+#define MBED_CONF_TARGET_NETWORK_DEFAULT_INTERFACE_TYPE ETHERNET   // set by target:LPC1768
+#define MBED_CONF_TARGET_TICKLESS_FROM_US_TICKER        0          // set by target:Target
+#define MBED_CONF_TARGET_US_TICKER_TIMER                3          // set by target:LPC1768
+#define MBED_CONF_TARGET_XIP_ENABLE                     0          // set by target:Target
 
 #endif
